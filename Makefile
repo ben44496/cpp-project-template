@@ -68,10 +68,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bnguyen4/cs225/tvorug2-elenam3-bnguyen4-parths3
+CMAKE_SOURCE_DIR = /home/bnguyen4/Desktop/cpp-project-template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bnguyen4/cs225/tvorug2-elenam3-bnguyen4-parths3
+CMAKE_BINARY_DIR = /home/bnguyen4/Desktop/cpp-project-template
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bnguyen4/cs225/tvorug2-elenam3-bnguyen4-parths3/CMakeFiles /home/bnguyen4/cs225/tvorug2-elenam3-bnguyen4-parths3/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bnguyen4/Desktop/cpp-project-template/CMakeFiles /home/bnguyen4/Desktop/cpp-project-template/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bnguyen4/cs225/tvorug2-elenam3-bnguyen4-parths3/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bnguyen4/Desktop/cpp-project-template/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -170,147 +170,43 @@ ParsingLib/fast:
 .PHONY : ParsingLib/fast
 
 #=============================================================================
-# Target rules for targets named test-bfs
+# Target rules for targets named test-adder
 
 # Build rule for target.
-test-bfs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-bfs
-.PHONY : test-bfs
+test-adder: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-adder
+.PHONY : test-adder
 
 # fast build rule for target.
-test-bfs/fast:
-	$(MAKE) $(MAKESILENT) -f bfs/CMakeFiles/test-bfs.dir/build.make bfs/CMakeFiles/test-bfs.dir/build
-.PHONY : test-bfs/fast
+test-adder/fast:
+	$(MAKE) $(MAKESILENT) -f adder/CMakeFiles/test-adder.dir/build.make adder/CMakeFiles/test-adder.dir/build
+.PHONY : test-adder/fast
 
 #=============================================================================
-# Target rules for targets named main-bfs
+# Target rules for targets named main-adder
 
 # Build rule for target.
-main-bfs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main-bfs
-.PHONY : main-bfs
+main-adder: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main-adder
+.PHONY : main-adder
 
 # fast build rule for target.
-main-bfs/fast:
-	$(MAKE) $(MAKESILENT) -f bfs/CMakeFiles/main-bfs.dir/build.make bfs/CMakeFiles/main-bfs.dir/build
-.PHONY : main-bfs/fast
+main-adder/fast:
+	$(MAKE) $(MAKESILENT) -f adder/CMakeFiles/main-adder.dir/build.make adder/CMakeFiles/main-adder.dir/build
+.PHONY : main-adder/fast
 
 #=============================================================================
-# Target rules for targets named BFSLib
+# Target rules for targets named AdderLib
 
 # Build rule for target.
-BFSLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BFSLib
-.PHONY : BFSLib
+AdderLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AdderLib
+.PHONY : AdderLib
 
 # fast build rule for target.
-BFSLib/fast:
-	$(MAKE) $(MAKESILENT) -f bfs/CMakeFiles/BFSLib.dir/build.make bfs/CMakeFiles/BFSLib.dir/build
-.PHONY : BFSLib/fast
-
-#=============================================================================
-# Target rules for targets named test-pagerank
-
-# Build rule for target.
-test-pagerank: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-pagerank
-.PHONY : test-pagerank
-
-# fast build rule for target.
-test-pagerank/fast:
-	$(MAKE) $(MAKESILENT) -f pagerank/CMakeFiles/test-pagerank.dir/build.make pagerank/CMakeFiles/test-pagerank.dir/build
-.PHONY : test-pagerank/fast
-
-#=============================================================================
-# Target rules for targets named main-pagerank
-
-# Build rule for target.
-main-pagerank: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main-pagerank
-.PHONY : main-pagerank
-
-# fast build rule for target.
-main-pagerank/fast:
-	$(MAKE) $(MAKESILENT) -f pagerank/CMakeFiles/main-pagerank.dir/build.make pagerank/CMakeFiles/main-pagerank.dir/build
-.PHONY : main-pagerank/fast
-
-#=============================================================================
-# Target rules for targets named PageRankLib
-
-# Build rule for target.
-PageRankLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PageRankLib
-.PHONY : PageRankLib
-
-# fast build rule for target.
-PageRankLib/fast:
-	$(MAKE) $(MAKESILENT) -f pagerank/CMakeFiles/PageRankLib.dir/build.make pagerank/CMakeFiles/PageRankLib.dir/build
-.PHONY : PageRankLib/fast
-
-#=============================================================================
-# Target rules for targets named main-astar
-
-# Build rule for target.
-main-astar: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main-astar
-.PHONY : main-astar
-
-# fast build rule for target.
-main-astar/fast:
-	$(MAKE) $(MAKESILENT) -f a_star/CMakeFiles/main-astar.dir/build.make a_star/CMakeFiles/main-astar.dir/build
-.PHONY : main-astar/fast
-
-#=============================================================================
-# Target rules for targets named test-astar
-
-# Build rule for target.
-test-astar: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-astar
-.PHONY : test-astar
-
-# fast build rule for target.
-test-astar/fast:
-	$(MAKE) $(MAKESILENT) -f a_star/CMakeFiles/test-astar.dir/build.make a_star/CMakeFiles/test-astar.dir/build
-.PHONY : test-astar/fast
-
-#=============================================================================
-# Target rules for targets named AStarLib
-
-# Build rule for target.
-AStarLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AStarLib
-.PHONY : AStarLib
-
-# fast build rule for target.
-AStarLib/fast:
-	$(MAKE) $(MAKESILENT) -f a_star/CMakeFiles/AStarLib.dir/build.make a_star/CMakeFiles/AStarLib.dir/build
-.PHONY : AStarLib/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
-# Target rules for targets named Utils
-
-# Build rule for target.
-Utils: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Utils
-.PHONY : Utils
-
-# fast build rule for target.
-Utils/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Utils.dir/build.make src/CMakeFiles/Utils.dir/build
-.PHONY : Utils/fast
+AdderLib/fast:
+	$(MAKE) $(MAKESILENT) -f adder/CMakeFiles/AdderLib.dir/build.make adder/CMakeFiles/AdderLib.dir/build
+.PHONY : AdderLib/fast
 
 # Help Target
 help:
@@ -320,19 +216,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... AStarLib"
-	@echo "... BFSLib"
-	@echo "... PageRankLib"
+	@echo "... AdderLib"
 	@echo "... ParsingLib"
-	@echo "... Utils"
-	@echo "... main"
-	@echo "... main-astar"
-	@echo "... main-bfs"
-	@echo "... main-pagerank"
+	@echo "... main-adder"
 	@echo "... main-parsing"
-	@echo "... test-astar"
-	@echo "... test-bfs"
-	@echo "... test-pagerank"
+	@echo "... test-adder"
 	@echo "... test-parsing"
 .PHONY : help
 
