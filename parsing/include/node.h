@@ -1,3 +1,5 @@
+#pragma once
+
 #include <stdint.h>
 #include <string>
 
@@ -6,6 +8,7 @@ namespace Parser {
 class Node {
     public:
         Node(std::string data);
+        ~Node();
 
         unsigned getID();
         std::string getData();

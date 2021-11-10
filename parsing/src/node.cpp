@@ -10,6 +10,10 @@ namespace Parser {
         data_ = data;
     }
 
+    Node::~Node() {
+        num_nodes_--;
+    }
+
     unsigned Node::getID() {
         return id_;
     }

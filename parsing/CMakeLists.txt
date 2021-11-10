@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
+# Specify the C++ standard (CMake3+)
 add_compile_options(-std=c++11)
 
 # Add header files
