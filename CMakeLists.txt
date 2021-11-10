@@ -19,7 +19,4 @@ endif()
 project(Railroad VERSION 1.0)
 
 add_subdirectory(parsing)
-add_subdirectory(bfs)
-add_subdirectory(pagerank)
-add_subdirectory(a_star)
-add_subdirectory(src)
+add_subdirectory(adder)
