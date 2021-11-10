@@ -8,12 +8,14 @@ class Node {
     public:
         template <class T>
         Node(std::string data) : data(data_) {
-            id_ = num_nodes++;
+            id_ = num_nodes_++;
         }
+
         template <class T>
         unsigned getID() { return id_; }
+        
         template <class T>
-        T getData() {return data_; }
+        T getData() { return data_; }
 
         static unsigned num_nodes_;
 
