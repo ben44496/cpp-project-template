@@ -15,7 +15,7 @@ class Node {
         template <class T>
         T getData() {return data_; }
 
-        static unsigned num_nodes;
+        static unsigned num_nodes_;
 
     private:
         unsigned id_ = 0;
